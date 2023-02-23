@@ -1,2 +1,2 @@
 # Currency Converter app
-More details coming soon
+More details coming soon...
