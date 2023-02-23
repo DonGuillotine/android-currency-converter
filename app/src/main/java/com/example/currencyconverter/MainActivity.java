@@ -2,11 +2,8 @@ package com.example.currencyconverter;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -19,7 +16,6 @@ import com.google.gson.JsonObject;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     Button button;
