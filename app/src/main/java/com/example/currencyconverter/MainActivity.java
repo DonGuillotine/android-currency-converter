@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         button = (Button) findViewById(R.id.button);
 
         //Adding Functionality
-        String[] dropDownList = {"USD", "INR","EUR","NZD"};
+        String[] dropDownList = {"USD","INR","EUR","NGN","NZD","GBP","JPY","CAD","AUD","CHF","CNY","HKD","KRW"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, dropDownList);
         convertToDropdown.setAdapter(adapter);
         convertFromDropdown.setAdapter(adapter);
