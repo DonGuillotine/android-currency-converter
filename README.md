@@ -6,3 +6,7 @@ More details are here (;
 Futher details here
 
 ![Screenshot_1677365895](https://user-images.githubusercontent.com/89584431/221383393-a0793db0-1d7b-48ae-8e87-9f5be84cc63e.png)
+
+More details are coming soon
+
+Will reformat the readme. This is a mockup :)
