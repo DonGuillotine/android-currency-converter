@@ -18,7 +18,7 @@ Features
 
 -   Simple user interface
 -   Real-time exchange rates
--   Supports over 100 currencies
+-   Supports over 13 currencies (100 coming soon...)
 -   User-friendly conversion calculator
 
 Installation
