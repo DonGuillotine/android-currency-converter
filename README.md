@@ -1,7 +1,7 @@
 Currency Converter App
 ======================
 
-![currency-converter-app](https://user-images.githubusercontent.com/1234567/1234567890/currency-converter-app.png)
+![Screenshot_1677364207](https://user-images.githubusercontent.com/89584431/221383304-c7168a1c-4722-416b-920a-f631efed7b4b.png)
 
 Overview
 --------
@@ -64,7 +64,7 @@ This project is licensed under the MIT License - see the [LICENSE](https://chat.
 # Currency Converter app
 More details are here (;
 
-![Screenshot_1677364207](https://user-images.githubusercontent.com/89584431/221383304-c7168a1c-4722-416b-920a-f631efed7b4b.png)
+
 
 Futher details here
 
