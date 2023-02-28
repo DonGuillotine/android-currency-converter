@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
+<!--Text-->
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -16,13 +16,14 @@
         android:layout_gravity="center"
         android:layout_margin="20dp"
         />
-
+<!--Using a Linear Layout-->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_gravity="center"
         >
+<!--        Text Amount to be Converted-->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -30,6 +31,7 @@
             android:textSize="15dp"
             android:layout_margin="20dp"
             />
+<!--        Edit Text Field-->
         <EditText
             android:id="@+id/currency_to_be_converted"
             android:layout_width="250dp"
@@ -39,6 +41,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             />
+        <!--        Text Amount to be Converted-->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -46,6 +49,7 @@
             android:textSize="15dp"
             android:layout_margin="20dp"
             />
+        <!--        Using a relative Layout-->
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -54,6 +58,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             >
+<!--            The Spinner component-->
             <Spinner
                 android:layout_width="250dp"
                 android:layout_height="40dp"
@@ -62,6 +67,7 @@
 
                 />
         </RelativeLayout>
+        <!--        Text: To Currency -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
