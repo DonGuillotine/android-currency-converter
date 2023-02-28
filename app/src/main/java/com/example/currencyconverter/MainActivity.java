@@ -18,6 +18,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
+    // Variables to be used
     Button button;
     EditText currencyToBeConverted;
     EditText currencyConverted;
@@ -41,12 +42,15 @@ public class MainActivity extends AppCompatActivity {
         convertToDropdown.setAdapter(adapter);
         convertFromDropdown.setAdapter(adapter);
 
+        // Setting an Event Listener on the convert button
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // Using the RetrofitInterface to get currency rates
                 RetrofitInterface retrofitInterface = RetrofitBuilder.getRetrofitInstance().create(RetrofitInterface.class);
                 Call<JsonObject> call = retrofitInterface.getExchangeCurrency(convertFromDropdown.getSelectedItem().toString());
                 call.enqueue(new Callback<JsonObject>() {
+                    // onResponse controls the logic and calculation for the exchange rates
                     @Override
                     public void onResponse(Call<JsonObject> call, Response<JsonObject> response) {
                         JsonObject res = response.body();
