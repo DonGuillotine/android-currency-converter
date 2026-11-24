@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">CurrencyConverter</string>
+    <string name="buy_pro">Buy Currency Converter Pro</string>
+    <string name="pro_unavailable">Test Store key required. Conversions are available.</string>
+    <string name="pro_checking">Checking Pro access…</string>
+    <string name="pro_check_error">Couldn’t check Pro access. Reopen the app to retry.</string>
+    <string name="pro_locked">Pro unlocks one favourite currency pair.</string>
+    <string name="pro_loading_purchase">Loading Test Store purchase…</string>
+    <string name="pro_offering_error">Couldn’t load the Test Store offering. Try again.</string>
+    <string name="pro_package_missing">No lifetime package in the current offering.</string>
+    <string name="pro_cancelled">Purchase cancelled.</string>
+    <string name="pro_purchase_failed">Test purchase failed. Try again.</string>
+    <string name="pro_entitlement_missing">Purchase completed, but the pro entitlement is inactive.</string>
+    <string name="pro_unlocked">Pro unlocked</string>
+    <string name="save_favourite">Save current pair</string>
+    <string name="use_favourite">Use favourite pair</string>
+    <string name="use_saved_pair">Use %1$s → %2$s</string>
 </resources>

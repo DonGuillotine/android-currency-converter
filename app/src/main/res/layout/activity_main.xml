@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 <!--Text-->
     <TextView
         android:id="@+id/textView"
@@ -116,4 +118,42 @@
         android:hint="Result"
         />
 
+    <LinearLayout
+        android:id="@+id/pro_controls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/buy_pro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buy_pro" />
+
+        <TextView
+            android:id="@+id/pro_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:accessibilityLiveRegion="polite"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/save_favourite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save_favourite"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/use_favourite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/use_favourite"
+            android:visibility="gone" />
+    </LinearLayout>
 </LinearLayout>
+</ScrollView>

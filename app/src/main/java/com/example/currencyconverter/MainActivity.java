@@ -38,7 +38,8 @@ public class MainActivity extends AppCompatActivity {
 
         //Adding Functionality
         String[] dropDownList = {"USD","INR","EUR","NGN","NZD","GBP","JPY","CAD","AUD","CHF","CNY","HKD","KRW"};
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, dropDownList);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
+                androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, dropDownList);
         convertToDropdown.setAdapter(adapter);
         convertFromDropdown.setAdapter(adapter);
 
@@ -46,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String targetCurrency = convertToDropdown.getSelectedItem().toString();
                 // Using the RetrofitInterface to get currency rates
                 RetrofitInterface retrofitInterface = RetrofitBuilder.getRetrofitInstance().create(RetrofitInterface.class);
                 Call<JsonObject> call = retrofitInterface.getExchangeCurrency(convertFromDropdown.getSelectedItem().toString());
@@ -56,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                         JsonObject res = response.body();
                         JsonObject rates = res.getAsJsonObject("rates");
                         double currency = Double.valueOf(currencyToBeConverted.getText().toString());
-                        double multiplier = Double.valueOf(rates.get(convertToDropdown.getSelectedItem().toString()).toString());
+                        double multiplier = Double.valueOf(rates.get(targetCurrency).toString());
                         double result = currency * multiplier;
                         currencyConverted.setText(String.valueOf(result));
                     }
@@ -68,8 +70,6 @@ public class MainActivity extends AppCompatActivity {
                 });
             }
         });
-
-
-
+        ProDemo.bind(this, convertFromDropdown, convertToDropdown, adapter);
     }
 }
